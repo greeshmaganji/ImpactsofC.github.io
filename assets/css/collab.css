@@ -1,0 +1,238 @@
+/* Collaboration impacts page CSS */
+* { 
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body{
+	background-color: #BCDFFF;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.sidebar{
+	display: none;
+}
+.split-right {
+	display: none;
+}
+
+/*Top Navigation*/
+.topnav {
+overflow: hidden;
+background-color: #061A40;
+
+}
+
+.topnav a {
+float: left;
+color: #BCDFFF;
+text-align: center;
+padding:  16px;
+text-decoration: none;
+font-size: 35px;
+}
+
+.topnav a:hover {
+background-color: #BCDFFF;
+color: rgb(186, 49, 49);
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split-left {
+float: left;
+background-color: #061A40;
+
+}
+.topnav .split-right {
+float: right;
+background-color: #061A40;
+}
+/*Collaboration impact*/
+.colcolumn{
+    border-radius: 16px;
+    
+}
+.colrow{
+    padding-top: 1px;
+    
+}
+input[type=button]{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+	background-color:#BCDFFF;
+	padding-bottom: 80px;
+}
+.fcolumn {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	text-align: center;
+}
+.frow:after {
+	content: "";
+	display: table;
+	clear: both;
+	text-align: center;
+}
+.footer p{
+	font-size: 14px;
+	padding-top: 20px;
+}
+#useful-links{
+	border-left: 2px dashed #061A40; 
+	border-right: 2px dashed #061A40;
+}
+
+
+/* impacts of covid webpage style */
+h2{
+	color: #BCDFFF;
+    font-weight:bolder;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3{
+	padding: 12px;
+    font-weight:bold;
+    color: #BCDFFF;
+    margin:5px;
+}
+p{
+	font-size: large;
+	font-weight: lighter;
+
+}
+.colcolumn p{
+    margin:5px;
+    line-height:200%;
+    color: #BCDFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+	text-align: justify;
+}
+.right{
+	float:right;
+	width: 40%;
+	height: 40%;
+	padding: 20px;
+	margin: 5px;
+	border-radius: 20%;
+}
+.left{
+	float:left;
+	width: 40%;
+	height: 40%;
+	padding: 20px;
+	margin: 5px;
+	border-radius: 20%;
+}
+
+.footer{
+	padding-top: 100px;
+}
+
+
+@media screen and (max-width:1150px){
+	#home-nav,#impacts-nav, #work-nav, #collab-nav, #edu-nav {
+        display: none;
+    }
+	.sidebar {
+		display: block;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: #061A40;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 30px;
+		border-style:dashed;
+  	}
+  
+  	.sidebar a {
+		padding: 8px 8px 32px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #BCDFFF;
+		display: block;
+		transition: 0.3s;
+  	}
+  
+  	.sidebar a:hover {
+		color: white;
+  	}
+  
+	.sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+  
+	.split-right {
+		display: flex;
+		float: right;
+		cursor: pointer;
+		color: #BCDFFF;
+		position: relative;
+		left: -30px;
+		top:30px;
+		transform: scale(5);
+		transition: margin-right .5s;
+		border: none;
+	}
+	.split-right:hover {
+		background-color: #444;
+	}
+	body{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.impcolumn{
+		width:100%
+	}
+
+}
+
+@media only screen and (max-width:720px){
+	body{
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	.fcolumn{
+		width: 100%;
+	}
+	.icolumn{
+		width:100%;
+	}
+	#useful-links{
+		border-left: none; 
+		border-right: none;
+		border-top: 2px dashed #061A40; 
+		border-bottom: 2px dashed #061A40;
+	}
+	#logo-nav{
+		transform: scale(0.75);
+	}
+	.sidebar a{
+		font-size: 15px;
+	}
+}
+
