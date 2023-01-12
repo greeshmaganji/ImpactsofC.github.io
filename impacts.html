@@ -1,0 +1,114 @@
+<!-- Impacts page HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="assets/css/istyles.css">
+    <!-- Link for Hamburger menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Impacts webpage</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Top navigation bar  -->
+        <div class="topnav" >
+            <a class="split-left" id="logo-nav" href="index.html"><img src="assets/images/logo.png" alt="Logo of ImpactsofC website" width="250" height="50"></a>
+            <a id="home-nav" href="index.html">Home</a>
+            <a class="current" id="impacts-nav" href="impacts.html">Impacts</a>
+            <a id="work-nav" href="work.html">Work</a>
+            <a id="collab-nav" href="collab.html">Collaboration</a>
+            <a id="edu-nav" href="edu.html">Education</a>
+            <button id="main" class="split-right" onclick="openNav()">&#9776;</button>
+        </div> 
+        
+        <!-- Side navigation bar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="impacts.html">Impacts</a>
+            <a href="work.html">Work</a>
+            <a href="collab.html">Collaboration</a>
+            <a href="edu.html">Education</a>
+        </div>
+        
+        <!-- JavaScript for opening and closing the navigation -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    </header>
+
+    <!-- Back button -->
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+
+    <!-- Main content  -->
+    <main class="impacts" id="impacts">
+        <h2 class="imp-title">Impacts of COVID-19</h2>
+        <p class="imp-content">
+            The COVID-19 pandemic has led to a dramatic loss of human
+             life worldwide and presents an unprecedented challenge to 
+             public health, food systems and therefore the world of work. 
+             Numerous businesses are in peril of dying out. There are 3.3 
+             billion people working round the world, and nearly half them 
+             face job loss. the bulk of workers in the informal economy lack 
+             social security, have limited access to high-quality healthcare, 
+             and not have access to productive assets, making them particularly 
+             vulnerable.
+        </p>
+        <!-- Work, Collaboration, and Education impacts buttons -->
+        <div class="improw" id="imptable">
+            <a href="work.html"><div class="impcolumn" style="background-color:#061A40; box-shadow: 10px 10px 8px black;color:#BCDFFF;">Work</div></a>
+            <a href="collab.html"><div class="impcolumn" style="background-color:#061A40; box-shadow: 10px 10px 8px black;color:#BCDFFF;">Collaboration</div></a>
+            <a href="edu.html"><div class="impcolumn" style="background-color:#061A40; box-shadow: 10px 10px 8px black;color:#BCDFFF;">Education</div></a>
+        </div>
+    </main>
+
+    <!-- Contact information, resources, and References page link -->
+    <footer class="footer">
+        <div class="frow" id="contact">
+            <!-- About the site and references page link -->
+            <div class="fcolumn">
+                <h4>About the site</h4>
+                <p>
+                    This website is a research of Impacts of COVID-19 on remote work, collaboration and education. 
+                </p>
+                <!-- Reference Page link -->
+                <a href="ref.html"><h4>Site References</h4></a><br>
+                <!-- Synopsis of the webpage -->
+                <a href="assets/media/synopsis.pdf"><h4>Synopsis</h4></a>
+
+            </div>
+            <!-- Any useful Links -->
+            <div class="fcolumn" id="useful-links">
+                <h4>Useful Links</h4>
+                <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/more/index.html">CDC</a></p>
+                <p><a href="https://www.dol.gov/coronavirus">US Department of Health</a></p>
+                <p><a href="https://www.benefits.gov/help/faq/Coronavirus-resources">COVID-19 Benefits</a></p>
+                <p><a href="https://coronavirus.health.ny.gov/home">Newyork state COVID-19</a></p>
+            </div>
+            <!-- Social contacts of Greeshma Ganji -->
+            <div class="fcolumn">
+                <h4>Socials and Contact</h4>
+                <p><a href="https://www.linkedin.com/in/ganjigreeshma/">LinkedIn</a></p>
+                <p><a href="https://www.facebook.com/ganji.greeshma/">Facebook</a></p>
+                <p><a href="https://www.instagram.com/_r.e.h.a_/">Instagram</a></p>
+                <p><a href="tel:5852105642">Contact Number</a></p>
+            </div>
+            <p class="copyright"> &copy; Greeshma Ganji</p>
+        </div>
+    </footer>
+</body>
+</html>

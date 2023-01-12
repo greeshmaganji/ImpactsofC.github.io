@@ -1,0 +1,234 @@
+<!-- Impacts of Covid-19 Index page  HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Link for Hamburger menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- title of the page -->
+    <title>Greeshma's Impacts of C Homepage</title> 
+</head>
+    <body id="home">
+        <header class="header">
+            <!-- Top navigation bar for desktop-->
+            <div class="topnav" >
+                <a class="split-left" id="logo-nav" href="index.html"><img src="assets/images/logo.png" alt="Logo of ImpactsofC website" width="250" height="50"></a>
+                <a class="current" id="home-nav" href="index.html">Home</a>
+                <a id="impacts-nav" href="impacts.html">Impacts</a>
+                <a id="work-nav" href="work.html">Work</a>
+                <a id="collab-nav" href="collab.html">Collaboration</a>
+                <a id="edu-nav" href="edu.html">Education</a>
+                <button id="main" class="split-right" onclick="openNav()">&#9776;</button>
+            </div> 
+            
+            <!-- side navigation bar for mobile -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="impacts.html">Impacts</a>
+                <a href="work.html">Work</a>
+                <a href="collab.html">Collaboration</a>
+                <a href="edu.html">Education</a>
+            </div>
+            
+            <!-- JavaScript for opening and closing sidebar -->
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+            
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                }
+                </script>
+        </header>
+
+        <!-- Responsive images of covid 19 for different screensize-->
+        <picture>
+            <source media="(max-width: 720px)"
+                    srcset="assets/images/image2.jpg">
+            <source media="(max-width: 1150px)"
+                    srcset="assets/images/image3.jpg">
+            <img class="covid-image" src="assets/images/image.png"
+                    alt="Image of COVID-19 virus">
+         </picture>
+
+        <!-- Back to top scroll button using JavaScript -->
+        <button onclick="topFunction()" id="topBtn" title="Go to top">&#8593;</button>
+        <script>
+            let mybutton = document.getElementById("topBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <main>
+            <div id="about-covid">
+                <h2>COVID-19</h2>
+                <p class="about-covid">
+                    The SARS CoV-2 virus is the infectious disease known as coronavirus disease (COVID-19). 
+                    It has had a big impact on the globe in many ways, like national lockdown, social distancing, 
+                    quarantine, remote working, etc., making it difficult for individuals to stay home and not go to work. 
+                </p>
+            </div>
+            <div class="covid-impacts" id="impacts">
+                <h2>Covid-19 Impacts</h2>
+                <p class="impacts">
+                    The COVID-19 pandemic had impacted health in many ways. Apart from that, it has also 
+                    impacted many businesses and industries. To learn more about the impacts click the link below.
+                </p>
+                <p class="impacts-link"><a href="impacts.html">Impacts Link!</a></p>
+            </div>
+            <!-- Resources regarding COVID-19 -->
+            <div id="resources" style=" padding-bottom: 10px;">
+                <h2 class="resources">Resources</h2>
+                <p>During the pandemic, the world health organization, central and state governments have provided many resources. 
+                    Here are various resources which helped people to get through pandemic.
+                </p>
+                <div class="rrow" id="resources-list">
+                    <!-- Dashboard -->
+                    <div class="rcolumn" id="dashboard" >
+                        <h3>Dashboard</h3>
+                            <p>There has been several dashboards around the world and even local 
+                                dashboards which displays visual representation of the COVID-19 
+                                cases daily. Even displaying the past data to observe the change 
+                                in change in cases. 
+                            </p>
+                    </div>
+                    <!-- About virus -->
+                    <div class="rcolumn" id="about-virus" >
+                        <h3>About Virus</h3>
+                            <p>
+                                A lot of information is available in online and newspapers, but 
+                                people don't get the accurate information about the virus. There 
+                                are plenty of valid government websites which provides information 
+                                regarding the Virus.
+                            </p>
+                    </div>
+                    <!-- Resources for Patients  -->
+                    <div class="rcolumn" id="patients">
+                            <h3>Patients</h3>
+                            <p>
+                                People suffered from COVID-19, who might not have proper access 
+                                to the information regarding benefits given by governments to 
+                                COVID-19 patients is not known widely. Here are few resources.
+                            </p>
+                            <p><a href="https://www.benefits.gov/help/faq/Coronavirus-resources">USA</a></p>
+                            <p><a href="https://home.treasury.gov/policy-issues/coronavirus" >U.S. Dept of Treasury</a></p>
+                            <p><a href="https://www.usa.gov/covid-financial-help-from-the-government" >Financial assistance</a></p>
+                    </div>
+                    <!-- Mental health resources -->
+                    <div class="rcolumn" id="mental-health" >
+                        <h3>Mental health</h3>
+                        <p>
+                            COVID-19 has impacted mental health in many ways since people have 
+                            been staying home due to the lockdown. 
+                        </p>
+                        <p><a href="https://dmh.lacounty.gov/covid-19-information/">Los Angeles county</a></p>
+                        <p><a href="https://www.cdc.gov/mentalhealth/stress-coping/cope-with-stress/index.html">Coping with stress</a></p>
+                        <p><a href="https://www.samhsa.gov/find-help/national-helpline">SAMHSA National Helpline</a></p>
+                    </div>
+                    <!-- Vaccination Resources -->
+                    <div class="rcolumn" id="vaccines" >
+                        <h3>Vaccination</h3>
+                        <p>
+                            Many researchers and pharma companies were on a challenge to produce 
+                            vaccine for the COVID-19 disease. Many have been successful and many 
+                            did not. Vaccine would help body fight the disease my producing antibodies 
+                            relating to Virus.
+                        </p>
+                    </div>
+                </div>
+                <!-- Video explaining COVID-19 -->
+                <h3 class="resources">Detailed Explanation</h3>
+                <div class="youtube-video">
+                    <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/i0ZabxXmH4Y?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Feeback button -->
+        <button class="open-button" onclick="openForm()">Submit Feedback</button>
+        <!-- Feedback Form using PHP -->
+        <div class="feedback-form" id="myForm">
+            <form method="get" action= "/feedback.php" class="form-container" target="_blank">
+                <h4 style="text-align: center;">Feedback form</h4>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="enter your name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="enter your email" name="email">
+                
+                <label for="feedback">Feedback:</label>
+                <textarea name="feedback" id="feedback" placeholder="Enter feedback here"></textarea>
+                <br>
+                <button type="submit" class="btn">Submit Feedback</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+        <!-- JavaScript to open and close feedback form -->
+        <script>
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
+        <!-- Contact information, resources, and References page link -->
+        <footer class="footer">
+            <div class="frow" id="contact">
+                <!-- About the site and references page link -->
+                <div class="fcolumn">
+                    <h4>About the site</h4>
+                    <p>
+                        This website is a research of Impacts of COVID-19 on remote work, collaboration and education. 
+                    </p>
+                    <!-- Reference Page link -->
+                    <a href="ref.html"><h4>Site References</h4></a><br>
+                    <!-- Synopsis of the webpage -->
+                    <a href="assets/media/synopsis.pdf"><h4>Synopsis</h4></a>
+
+                </div>
+                <!-- Any useful Links -->
+                <div class="fcolumn" id="useful-links">
+                    <h4>Useful Links</h4>
+                    <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/more/index.html">CDC</a></p>
+                    <p><a href="https://www.dol.gov/coronavirus">US Department of Health</a></p>
+                    <p><a href="https://www.benefits.gov/help/faq/Coronavirus-resources">COVID-19 Benefits</a></p>
+                    <p><a href="https://coronavirus.health.ny.gov/home">Newyork state COVID-19</a></p>
+                </div>
+                <!-- Social contacts of Greeshma Ganji -->
+                <div class="fcolumn">
+                    <h4>Socials and Contact</h4>
+                    <p><a href="https://www.linkedin.com/in/ganjigreeshma/">LinkedIn</a></p>
+                    <p><a href="https://www.facebook.com/ganji.greeshma/">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/_r.e.h.a_/">Instagram</a></p>
+                    <p><a href="tel:5852105642">Contact Number</a></p>
+                </div>
+                <p class="copyright"> &copy; Greeshma Ganji</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

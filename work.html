@@ -1,0 +1,154 @@
+<!-- Impacts of COVID-19 on work -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="assets/css/work.css">
+    <!-- Link for Hamburger menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Title of the page -->
+    <title>Work Impacts</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Top navigation bar for desktop view -->
+        <div class="topnav" >
+            <!-- Logo of site Impacts of C -->
+            <a class="split-left" id="logo-nav" href="index.html"><img src="assets/images/logo.png" alt="Logo of ImpactsofC website" width="250" height="50"></a>
+            <a  id="home-nav" href="index.html">Home</a>
+            <a id="impacts-nav" href="impacts.html">Impacts</a>
+            <a class="current" id="work-nav" href="work.html">Work</a>
+            <a id="collab-nav" href="collab.html">Collaboration</a>
+            <a id="edu-nav" href="edu.html">Education</a>
+            <button id="main" class="split-right" onclick="openNav()">&#9776;</button>
+        </div> 
+        
+        <!-- Side navigation bar for mobile view -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="impacts.html">Impacts</a>
+            <a href="work.html">Work</a>
+            <a href="collab.html">Collaboration</a>
+            <a href="edu.html">Education</a>
+        </div>
+        
+        <!-- JavaScript to open and close the navigation by clicking hamburger menu icon -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    </header>
+
+    <!-- Back button to take user back to previous page -->
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+
+    <!-- Work impact -->
+    <main class="work" id="work">
+        <div class="worrow" id="wortable">
+            <div class="worcolumn" style="background-color:#061A40; padding-bottom: 10px;">
+                <h2>Impact of COVID-19 on Work</h2>
+                <!-- JOb loss due to COVID-19 -->
+                <div class = "jobloss">
+                    <!-- Image for work impact -->
+                    <img class="right" src="assets/images/work1.jpg" alt="Impact of Covid 19 on work-from-home on employees" >
+                    <p>
+                        The COVID-19 pandemic has impacted students, teachers, researchers, 
+                        and non-teaching staff in the Education sector. There have also been 
+                        setbacks for academic centers and learning institutes (Kuhfeld, 2019). 
+                        The pandemic has not only impacted many people but also introduced them 
+                        to the new and latest technology.
+                    </p>
+                </div>
+
+                <!-- Changes in job due to COVID-19 -->
+                <div class="jobchanges">
+                    <h3><em>Job Changes and Remote Work:</em></h3>
+                    <p>
+                        The nature of work had substantially changed for people who had 
+                        sustainable jobs by working remotely. New technologies have been 
+                        introduced for the connectivity of users across the world. In contrast 
+                        to the general employees, some groups of employees more easily develop 
+                        negative perceptions than positive ones, such as autistic employees, 
+                        teachers, and university employees,due to the challenges of adaptation 
+                        to teleworking. On top of that, strict management control and monitoring, 
+                        deteriorated work engagement, and excessive job demand can aggravate 
+                        employees' mental health and psychological symptoms during remote working 
+                        <img class="left" src="assets/images/work2.png" alt="Impact of Covid 19 on work-from-home on healthcare workers" >
+                        (Wei, Yingbo, & Danni, 2021). A study has proven that remote work has been 
+                        effective and that people in the United States embrace flexibility. More 
+                        than thirty-five percent of jobs offer full-time work from home, twenty- 
+                        three percent of employers offer part-time work-from-home flexibility, 
+                        whereas forty-two percent do not offer work-from-home flexibility as 
+                        required by the job description (André, et al., 2022).
+                    </p>
+                </div>
+
+                <!-- Job outcome during COVID-19 -->
+                <div class="joboutcomes">
+                    <h3><em>Job Outcomes:</em></h3>
+                    <p>
+                        The changes in employment will impact many employment outcomes beyond 
+                        job performance, including organizational commitment, job stress, and 
+                        job satisfaction. Increasing data suggest that important Organizational 
+                        changes, particularly those aided by technology, have a big impact on the 
+                        outcomes of jobs (Venkatesh, 2020). According to another research (Bariso, 
+                        2020), jobs having more stress leads to less job satisfaction lead to lower 
+                        job performance. Companies like Google, Cisco, and Amazon have an extra day 
+                        off for their employees to relieve their stress and recharge. This method has 
+                        been effective for employers and employees.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Contact information, resources, and References page link -->
+<footer class="footer">
+    <div class="frow" id="contact">
+        <!-- About the site and references page link -->
+        <div class="fcolumn">
+            <h4>About the site</h4>
+            <p>
+                This website is a research of Impacts of COVID-19 on remote work, collaboration and education. 
+            </p>
+            <!-- Reference Page link -->
+            <a href="ref.html"><h4>Site References</h4></a><br>
+            <!-- Synopsis of the webpage -->
+            <a href="assets/media/synopsis.pdf"><h4>Synopsis</h4></a>
+
+        </div>
+        <!-- Any useful Links -->
+        <div class="fcolumn" id="useful-links">
+            <h4>Useful Links</h4>
+            <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/more/index.html">CDC</a></p>
+            <p><a href="https://www.dol.gov/coronavirus">US Department of Health</a></p>
+            <p><a href="https://www.benefits.gov/help/faq/Coronavirus-resources">COVID-19 Benefits</a></p>
+            <p><a href="https://coronavirus.health.ny.gov/home">Newyork state COVID-19</a></p>
+        </div>
+        <!-- Social contacts of Greeshma Ganji -->
+        <div class="fcolumn">
+            <h4>Socials and Contact</h4>
+            <p><a href="https://www.linkedin.com/in/ganjigreeshma/">LinkedIn</a></p>
+            <p><a href="https://www.facebook.com/ganji.greeshma/">Facebook</a></p>
+            <p><a href="https://www.instagram.com/_r.e.h.a_/">Instagram</a></p>
+            <p><a href="tel:5852105642">Contact Number</a></p>
+        </div>
+        <p class="copyright"> &copy; Greeshma Ganji</p>
+    </div>
+    </footer>
+</body>
+</html>

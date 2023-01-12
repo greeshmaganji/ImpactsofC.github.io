@@ -1,0 +1,170 @@
+<!-- Impacts of COVID-19 on Education -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="assets/css/education.css">
+    <!-- Link for Hamburger menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Title of the page -->
+    <title>Education Impacts</title>
+</head>
+
+<body>
+    
+    <<header class="header">
+        <!-- Top navigation bar for desktop view -->
+        <div class="topnav" >
+            <!-- Logo of site Impacts of C -->
+            <a class="split-left" id="logo-nav" href="index.html"><img src="assets/images/logo.png" alt="Logo of ImpactsofC website" width="250" height="50"></a>
+            <a  id="home-nav" href="index.html">Home</a>
+            <a id="impacts-nav" href="impacts.html">Impacts</a>
+            <a id="work-nav" href="work.html">Work</a>
+            <a class="current" id="collab-nav" href="collab.html">Collaboration</a>
+            <a id="edu-nav" href="edu.html">Education</a>
+            <button id="main" class="split-right" onclick="openNav()">&#9776;</button>
+        </div> 
+        
+        <!-- Side navigation bar for mobile view -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="impacts.html">Impacts</a>
+            <a href="work.html">Work</a>
+            <a href="collab.html">Collaboration</a>
+            <a href="edu.html">Education</a>
+        </div>
+        
+        <!-- JavaScript to open and close the navigation by clicking hamburger menu icon -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    </header>
+
+    <!-- Back button to take user back to previous page -->
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+
+    <!-- Education impact -->
+    <main class="edu" id="edu">
+        <!-- Impact of Education during COVID-19 -->
+        <div class="edurow" id="edutable">
+            <div class="educolumn" style="background-color:#061A40;  padding-bottom: 10px;">
+                <h2>Impact of COVID-19 on Education</h2>
+                <p>
+                    <img class="right" src="assets/images/edu2.jpeg" alt="image of Impact of Covid 19 on education" >
+                    Unemployment is not a new topic. It has been a problem for many years. 
+                    But the pandemic has hit hard on people working on a paycheck-to-paycheck 
+                    basis. COVID has created additional unique challenges to the employment 
+                    sector (Venkatesh, 2020). The Lockdown during the pandemic affected 
+                    low-income workers. A study indicates that up to one-third of United 
+                    States jobs were vulnerable. And a majority of these jobs include jobs 
+                    relating to food service, customer service, office support, and sales. 
+                    Up to 86 percent of these jobs were paid less than $40,000 annually 
+                    (Lund, Ellingrud, Hancock, Manyika, & Dua, 2020).
+                </p>
+                <!-- education impact on Students -->
+                <div class="students">
+                    <h3><em>Students:</em></h3>
+                    
+                    <p>
+                        With the introduction of Google classroom, zoom, and google meet, 
+                        students have changed their way of thinking and adapted to technology 
+                        by uploading assignments, watching online lectures, and solving 
+                        multiple-choice questions, which created the biggest change in regular 
+                        academic sessions. College students have used the time to learn software 
+                        courses such as MATLAB, R, Python, Java, and C programming. The 
+                        postgraduate students have focused on NET, SET, GAT, and other competitive 
+                        exams (Saima Firdaus & ShubhadaRamesh, 2021).
+
+                    </p>
+                </div>
+                <!-- education impact on teachers -->
+                <div class="teachers">
+                    <img class="left" src="assets/images/edu1.jpg" alt="image of Impact of Covid 19 on education" >
+                    <h3><em>Teachers:</em></h3>
+                    <p>
+                        Teachers were challenged to learn new technologies and teach those to students 
+                        for better education. They had to learn new teaching methods using PPTs, videos, 
+                        and conferencing using zoom, google meet or other applications. This way of teaching 
+                        changed the relationship between students and teaching making it stronger and closer. 
+                        To improve the teaching methods and help students get subjects to understand better, 
+                        teachers had to attend online conferences, meetings, webinars, quizzes, and 
+                        orientation courses (Saima Firdaus & ShubhadaRamesh, 2021).
+                    </p>
+                </div>
+                <!-- education impact on researchers -->
+                <div class="researchers">
+                    <h3><em>Researchers:</em></h3>
+                    <p>
+                        Faculty pursuing Ph.D. have gotten sufficient time for their research and study. 
+                        Many researchers focused on and published their papers in various national and 
+                        international journals. One of the fields where there were many publications during 
+                        the pandemic is the medical field. Medical researchers worldwide have started studying 
+                        and developing vaccines for COVID-19 (Saima Firdaus & ShubhadaRamesh, 2021).
+                    </p>
+                </div>
+                <!-- education impact on staff -->
+                <div class="nt-staff">
+                    <h3><em>Non-Teaching Staff:</em></h3>
+                    <p>
+                        The non-teaching staff is generally classified into two categories, 
+                        clerk office staff, and peon. Typically, the office clerks and peons 
+                        mostly spend their time in the office maintaining a clean environment 
+                        and having enough time to focus on their health and wellbeing (Saima 
+                        Firdaus & ShubhadaRamesh, 2021).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Contact information, resources, and References page link -->
+    <footer class="footer">
+        <div class="frow" id="contact">
+            <!-- About the site and references page link -->
+            <div class="fcolumn">
+                <h4>About the site</h4>
+                <p>
+                    This website is a research of Impacts of COVID-19 on remote work, collaboration and education. 
+                </p>
+                <!-- Reference Page link -->
+                <a href="ref.html"><h4>Site References</h4></a><br>
+                <!-- Synopsis of the webpage -->
+                <a href="assets/media/synopsis.pdf"><h4>Synopsis</h4></a>
+
+            </div>
+            <!-- Any useful Links -->
+            <div class="fcolumn" id="useful-links">
+                <h4>Useful Links</h4>
+                <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/more/index.html">CDC</a></p>
+                <p><a href="https://www.dol.gov/coronavirus">US Department of Health</a></p>
+                <p><a href="https://www.benefits.gov/help/faq/Coronavirus-resources">COVID-19 Benefits</a></p>
+                <p><a href="https://coronavirus.health.ny.gov/home">Newyork state COVID-19</a></p>
+            </div>
+            <!-- Social contacts of Greeshma Ganji -->
+            <div class="fcolumn">
+                <h4>Socials and Contact</h4>
+                <p><a href="https://www.linkedin.com/in/ganjigreeshma/">LinkedIn</a></p>
+                <p><a href="https://www.facebook.com/ganji.greeshma/">Facebook</a></p>
+                <p><a href="https://www.instagram.com/_r.e.h.a_/">Instagram</a></p>
+                <p><a href="tel:5852105642">Contact Number</a></p>
+            </div>
+            <p class="copyright"> &copy; Greeshma Ganji</p>
+        </div>
+    </footer>
+</body>
+</html>
